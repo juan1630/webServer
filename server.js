@@ -2,7 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 require('./hbs/helpers');
 
-const app = express()
+const app = express();
+const port = process.env.PORT || 3000
  
 app.use(express.static(__dirname+'/public'));
 
@@ -28,6 +29,6 @@ app.get('/about', (req, res) => {
     }); 
 
  
-app.listen(3000, ()=>{
-    console.log('Escuchando peticiones en el puerto 3000');
+app.listen(port , ()=>{
+    console.log(`El servidor esta escuchando peticiones por el puerto: ${port}`);
 })
