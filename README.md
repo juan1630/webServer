@@ -10,3 +10,17 @@
 - Interpolacion de variables entre node js y handlebars
 - Helpers de hbs
 - Partilas en hbs
+
+#### Comandos 
+
+``` 
+npm install
+```
+
+``` 
+npm install --save hbs
+```
+
+``` 
+npm install --save express
+```
